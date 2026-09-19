@@ -4,7 +4,7 @@ steps:
   args: [
     'build',
     '-t',
-    'asia-south1-docker.pkg.dev/careful-chess-495403-e6/myrepo',
+    'asia-south1-docker.pkg.dev/careful-chess-495403-e6/myrepo/app',
     '.'
   ]
 
@@ -12,7 +12,7 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [
     'push',
-    'asia-south1-docker.pkg.dev/careful-chess-495403-e6/myrepo'
+    'asia-south1-docker.pkg.dev/careful-chess-495403-e6/myrepo/app'
   ]
 
 # Deploy to GKE
